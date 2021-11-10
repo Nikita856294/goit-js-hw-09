@@ -1,0 +1,11 @@
+.timer {
+  display: flex;
+  justify-content: left;
+  padding-top: 30px;
+}
+.field {
+  margin-left: 10px;
+}
+#datetime-picker {
+  margin-left: 10px;
+}
