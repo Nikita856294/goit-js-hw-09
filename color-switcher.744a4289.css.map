@@ -1,0 +1,1 @@
+{"version":3,"sources":["color-switcher.css"],"names":[],"mappings":"AAAA,SACE,YAAa,CACb,iBACF","file":"color-switcher.744a4289.css","sourceRoot":"../src","sourcesContent":[".buttons {\n  padding: 15px;\n  border-radius: 4px;\n}\n"]}
