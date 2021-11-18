@@ -5,7 +5,6 @@ const form = document.querySelector('.form');
 const inputDelay = document.querySelector("input[name='delay']");
 const inputStep = document.querySelector("input[name='step']");
 const inputAmount = document.querySelector("input[name='amount']");
-// btn.addEventListener('submit');
 
 function createPromise(position, delay) {
   const shouldResolve = Math.random() > 0.3;
@@ -27,9 +26,9 @@ form.addEventListener('submit', e => {
   const amount = Number(inputAmount.value);
   let delay = firstDelay;
 
-  for (let i = 1; i <= amount; i += 1) {
+  for (let i = 0; i <= amount; i += 1) {
     setTimeout(() => {
-      createPromise(i, delay)
+      createPromise(i + 1, delay)
         .then(({ position, delay }) => {
           return Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
         })
